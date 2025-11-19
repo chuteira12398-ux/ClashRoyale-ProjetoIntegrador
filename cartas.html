@@ -7,14 +7,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f5f3f0;
+            background: #0095f8;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #2d3e50;
-            color: #fff;
+            background: #00a2ff;
+            color: #229fe7;
             text-align: center;
             padding: 15px;
             font-size: 1.6rem;
@@ -40,11 +40,11 @@
         }
 
         .filter-buttons button:hover {
-            background: #5338c2;
+            background: #ad0000;
         }
 
         .filter-buttons button.active {
-            background: #2d3e50;
+            background: #00c220;
         }
 
         /* Container das cartas */
@@ -52,7 +52,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 20px;
-            padding: 20px;
+            padding: 250px;
         }
 
         .card {
@@ -60,7 +60,8 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             padding: 20px;
-            transition: 0.3s;
+            transition: 5s;
+            border: #7a01ec solid;
         }
 
         .card img {
@@ -72,17 +73,17 @@
         .card h2 {
             text-align: center;
             color: #6a4ee6;
-            margin: 10px 0;
+            margin: 10px 100;
         }
 
         .raridade {
             text-align: center;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .raridade.comum {
-            color: #999;
+            color: #3266b3;
         }
 
         .raridade.raro {
@@ -96,15 +97,23 @@
         .hidden {
             display: none;
         }
+
+        img{
+
+            width: 30%;
+            /* centraliza o excesso */
+        }
+
+        
     </style>
 
 
 </head>
 
 <body>
+    
 
-    <header>Wiki Clash Royale — Cartas</header>
-
+    <header><img src="clash royale/download (1).png" alt=""></header>
     <!-- Botões de filtro -->
     <div class="filter-buttons">
         <button class="active" data-filter="todas">Todas</button>
@@ -116,6 +125,8 @@
         <button data-filter="feiticos">Feitiços</button>
         <button data-filter="espiritos">Espíritos</button>
     </div>
+
+    
 
 
 
@@ -1145,7 +1156,7 @@
 
         <!-- Carta 20: Foguete -->
         <div class="card feiticos">
-            <img src="clash royale/ZapCard.webp" alt="Foguete">
+            <img src="clash royale/images do foguete.jpg" alt="Foguete">
             <h2>Foguete</h2>
             <div class="comum">
                 <div><b>Raridade:</b></div>
@@ -1161,7 +1172,7 @@
             </div>
 
             <div class="section-title">Descrição</div>
-            <p></p>
+            <p>Causa Dano em uma área pequena e de forma bem impressionante! Dano reduzido às torres da coroa.</p>
             <div class="section-title">Estatísticas</div>
             <table>
                 <tr>
@@ -1186,9 +1197,946 @@
             <div class="section-title">Counters</div>
             <ul>
                 <li>Valquíria</li>
+                <li>Fornalha</li>
                 <li>Príncipe</li>
+                <li>Bruxa</li>
+
+
+            </ul>
+        </div>
+        <!-- Carta 21: Monge -->
+        <div class="card campeoes">
+            <img src="clash royale/carta-campeao-monge-clash-royale-monk.png" alt="Monge">
+            <h2>Monge</h2>
+            <div class="comum">
+                <div><b>Raridade:</b></div>
+                <div>Campeão</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>5 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>corpo a corpo</div>
+                <div><b>Arena:</b></div>
+                <div>Barbáros</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Ele desfere um combo de 3 golpes, e o último causa dano extra e empurra os seus inimigos.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Valquíria</li>
+                <li>Executor</li>
+                <li>Bebê Dragão</li>
+                <li>Dragão Infernal</li>
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 22: Bebê Dragão -->
+        <div class="card epico">
+            <img src="clash royale/BabyDragonCard.webp" alt="Bebê Dragão">
+            <h2>Bebê Dragão</h2>
+            <div class="epico">
+                <div><b>Raridade:</b></div>
+                <div>Épica</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>3.5 quadrados</div>
+                <div><b>Arena:</b></div>
+                <div>Poço de Ossos</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>O Bebê Dragão é uma tropa voadora que ataca com dano em área.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Mosqueteira</li>
+                <li>Golem de gelo</li>
+                <li>Mega Servo</li>
+
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 23: Rei Esqueleto -->
+        <div class="card campeoes">
+            <img src="clash royale/carta-campeao-rei-esqueleto-clash-royale-skeleton-king.png" alt="Rei Esqueleto">
+            <h2>Rei Esqueleto</h2>
+            <div class="campeoes">
+                <div><b>Raridade:</b></div>
+                <div>Campeão</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Nenhum</div>
+                <div><b>Arena:</b></div>
+                <div>Cozinha do Executor</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>e sente sozinho e convoca amigos derrotados na batalha para se juntarem a ele na arena.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Lenhador</li>
+                <li>Mega Cavaleiro</li>
+
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 24: Rei Esqueleto -->
+        <div class="card campeoes">
+            <img src="clash royale/images.jpg" alt="Bandida-líder">
+            <h2>Bandida-Líder</h2>
+            <div class="campeoes">
+                <div><b>Raridade:</b></div>
+                <div>Campeão</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>6 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Nenhum</div>
+                <div><b>Arena:</b></div>
+                <div>Cripta Real</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>É uma carta de campeão do jogo Clash Royale, conhecida por sua habilidade de se teletransportar e atacar,
+                inspirada na estética da Gangue da Floresta</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>P.E.K.K.A</li>
+                <li>Mega Cavaleiro</li>
+
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 25: Pequeno Príncipe -->
+        <div class="card campeoes">
+            <img src="clash royale/LittlePrinceCard.webp" alt="Pequeno Príncipe">
+            <h2>Pequeno Príncipe</h2>
+            <div class="campeoes">
+                <div><b>Raridade:</b></div>
+                <div>Campeão</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>3 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Nenhum</div>
+                <div><b>Arena:</b></div>
+                <div>Santuário Silencioso</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Ele pode parecer fraco, mas sempre tem alguém o protegendo de longe.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Relâmpago</li>
+                <li>Bola de Fogo</li>
+                <li>Lenhador</li>
+                <li>P.E.K.K.A</li>
+                <li>Exército de Esqueletos</li>
+                <li>Lápide</li>
+
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 26: Goblinstein -->
+        <div class="card campeoes">
+            <img src="clash royale/GoblinsteinCard.webp" alt="Goblinstein">
+            <h2>Goblinstein</h2>
+            <div class="campeoes">
+                <div><b>Raridade:</b></div>
+                <div>Campeão</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>5 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Nenhum</div>
+                <div><b>Arena:</b></div>
+                <div>Santuário Silencioso</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>O Monstro que caminha em direção às construções inimigas enquanto o Doutor aguarda o momentode pôr a
+                armadilha.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Barril de Goblins</li>
+                <li>Tronco</li>
+                <li>Flechas</li>
+
+            </ul>
+        </div>
+
+        <!-- Carta 27: Rainha Arqueira -->
+        <div class="card campeoes">
+            <img src="clash royale/images (1).jpg" alt="Rainha Arqueira">
+            <h2>Rainha Arqueira</h2>
+            <div class="campeoes">
+                <div><b>Raridade:</b></div>
+                <div>Campeão</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>5 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Nenhum</div>
+                <div><b>Arena:</b></div>
+                <div>Cripta Real</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Rápida, astuta e mortal.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Relâmpago</li>
+                <li>Gigante Elétrico</li>
+                <li>MegaCavaleiro</li>
+
+            </ul>
+        </div>
+
+        <!-- Carta 28: Cavaleiro Dourado -->
+        <div class="card campeoes">
+            <img src="clash royale/GoldenKnightCard.webp" alt="Cavaleiro Dourado">
+            <h2>Cavaleiro Dourado</h2>
+            <div class="campeoes">
+                <div><b>Raridade:</b></div>
+                <div>Campeão</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Nenhum</div>
+                <div><b>Arena:</b></div>
+                <div>Cozinha do Executor</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Um guerreiro com flexibilidade e madeixas invejáveis.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Relâmpago</li>
+                <li>Gigante Elétrico</li>
+                <li>MegaCavaleiro</li>
+
+            </ul>
+        </div>
+
+        <!-- Carta 29: Mineiro Bombado -->
+        <div class="card campeoes">
+            <img src="clash royale/images (2).jpg" alt="Mineiro Bombado">
+            <h2>Mineiro Bombado</h2>
+            <div class="campeoes">
+                <div><b>Raridade:</b></div>
+                <div>Campeão</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Nenhum</div>
+                <div><b>Arena:</b></div>
+                <div>Cripta Real</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Ele é o maior mineiro da arena e também o mais furtivo.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Relâmpago</li>
+                <li>Gigante Elétrico</li>
+                <li>MegaCavaleiro</li>
+
+            </ul>
+        </div>
+
+        <!-- Carta 30: Máquina Goblin -->
+        <div class="card lendario">
+            <img src="clash royale/GoblinMachineCard.webp" alt="Máquina Goblin">
+            <h2>Máquina Goblin</h2>
+            <div class="lendario">
+                <div><b>Raridade:</b></div>
+                <div>Lendário</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>5 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>2 a 5,5 quadrados</div>
+                <div><b>Arena:</b></div>
+                <div>Mina do Mineiro</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Ataca usando dois braços para combate corpo a corpo e um foguete para dano à distância.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>P.E.K.K.A</li>
+                <li>Mago Elétrico</li>
                 <li>Mini P.E.K.K.A</li>
-                <li>Torre Inferno</li>
+                <li>Gigante Real</li>
+
+            </ul>
+        </div>
+
+        <!-- Carta 31: Pescador -->
+        <div class="card lendario">
+            <img src="clash royale/FishermanCard.webp" alt="Pescador">
+            <h2>Pescador</h2>
+            <div class="lendario">
+                <div><b>Raridade:</b></div>
+                <div>Lendário</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>3 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>2 a 5,5 quadrados</div>
+                <div><b>Arena:</b></div>
+                <div>Mina do Mineiro</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Conhecido por sua habilidade única de controle de campo de batalha.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Tesla</li>
+                <li>Canhão</li>
+                <li>Mini P.E.K.K.A</li>
+                <li>Gigante Esqueleto</li>
+
+            </ul>
+        </div>
+
+        <!-- Carta 32: Arqueiro Mágico -->
+        <div class="card lendario">
+            <img src="clash royale/MagicArcherCard.png" alt="">
+            <h2>Arqueiro Mágico</h2>
+            <div class="lendario">
+                <div><b>Raridade:</b></div>
+                <div>Lendário</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>7 quadrados</div>
+                <div><b>Arena:</b></div>
+                <div>Covil dos Patifes</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Ele atira com um arco e flecha mágica que passa danificando tudo pelo caminho.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Gigante</li>
+                <li>Mosqueteira</li>
+
+            </ul>
+        </div>
+
+        <!-- Carta 33: Dragão Infernal -->
+        <div class="card lendario">
+            <img src="clash royale/InfernoDragonCard.webp" alt="">
+            <h2>Dragão Infernal</h2>
+            <div class="lendario">
+                <div><b>Raridade:</b></div>
+                <div>Lendário</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>3.5 quadrados</div>
+                <div><b>Arena:</b></div>
+                <div>Eletrovale</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Dispara um raio de fogo concentrado cujo um dano aumenta com o tempo.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Mago Elétrico</li>
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 34: Mago Elétrico -->
+        <div class="card lendario">
+            <img src="clash royale/ElectroWizardCard.webp" alt="">
+            <h2>Mago Elétrico</h2>
+            <div class="lendario">
+                <div><b>Raridade:</b></div>
+                <div>Lendário</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>5 quadrados</div>
+                <div><b>Arena:</b></div>
+                <div>Eletrovale</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Atordoa os inimigos que estiverem por perto e que lança raios com as duas mãos.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Barril de Bárbaro</li>
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 35: Príncipe -->
+        <div class="card raro">
+            <img src="clash royale/PrinceCard.webp" alt="">
+            <h2>Príncipe</h2>
+            <div class="raro">
+                <div><b>Raridade:</b></div>
+                <div>Raro</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Físico Distante</div>
+                <div><b>Arena:</b></div>
+                <div>Real</div>
+            </div>
+
+            <div class="section-title">Descrição</div>
+            <p>Ele causa o dobro de dano ao atacar correndo.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Lápide</li>
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 36: Três Mosqueteiras -->
+        <div class="card raro">
+            <img src="clash royale/ThreeMusketeersCard.webp" alt="">
+            <h2>Três Mosqueteiras</h2>
+            <div class="raro">
+                <div><b>Raridade:</b></div>
+                <div>Raro</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>9 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Físico próximo</div>
+                <div><b>Arena</b></div>
+                <div>Real</div>
+            </div>
+
+            <div class="section-title"><b>Descrição</b></div>
+            <p>Elas fazem picadinho dos inimigos, tudo em nome da honra e da justiça.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Relâmpago</li>
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 37: Porcos Reais -->
+        <div class="card raro">
+            <img src="clash royale/RoyalHogsCard.webp" alt="">
+            <h2>Porcos Reais</h2>
+            <div class="raro">
+                <div><b>Raridade:</b></div>
+                <div>Raro</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>5 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Físico próximo</div>
+                <div><b>Arena</b></div>
+                <div>Real</div>
+            </div>
+
+            <div class="section-title"><b>Descrição</b></div>
+            <p>Eles adoram morder tudo, desde mças até torres.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Torre do Bombardeiro</li>
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 38: Corredor -->
+        <div class="card raro">
+            <img src="clash royale/HogRiderCard.webp" alt="">
+            <h2>Corredor</h2>
+            <div class="raro">
+                <div><b>Raridade:</b></div>
+                <div>Raro</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>5 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>Físico próximo</div>
+                <div><b>Arena</b></div>
+                <div>Oficina do Construtor.</div>
+            </div>
+
+            <div class="section-title"><b>Descrição</b></div>
+            <p>Torre rápida de combate corpo a corpo que ataca construções e pode pular sobre o rio.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Canhão</li>
+
+
+            </ul>
+        </div>
+
+        <!-- Carta 39: Morteiro -->
+        <div class="card comum">
+            <img src="clash royale/MortarCard.webp" alt="">
+            <h2>Morteiro</h2>
+            <div class="comum">
+                <div><b>Raridade:</b></div>
+                <div>Comum</div>
+                <div><b>Tropa:</b></div>
+                <div>Tropa de dano.</div>
+                <div><b>Custo:</b></div>
+                <div>4 Elixir</div>
+                <div><b>Alcance:</b></div>
+                <div>11,5 quadrados</div>
+                <div><b>Arena</b></div>
+                <div>Oficina do Construtor.</div>
+            </div>
+
+            <div class="section-title"><b>Descrição</b></div>
+            <p>Construção defensiva de longo alcance.</p>
+            <div class="section-title">Estatísticas</div>
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Dano</th>
+                    <th>DPS</th>
+                    <th>Dano a Torre</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>675</td>
+                    <td>265</td>
+                    <td>967</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>626</td>
+                    <td>831</td>
+                    <td>1.000</td>
+                </tr>
+            </table>
+            <div class="section-title">Counters</div>
+            <ul>
+                <li>Mosqueteira</li>
 
 
             </ul>
