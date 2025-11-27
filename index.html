@@ -1,77 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clash Royale - Início</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Clash Royale</title>
+
     <style>
         body {
             margin: 0;
             padding: 0;
+            background: #001f83;
             font-family: Arial, sans-serif;
-            height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-            background-image: url(https://static.wikia.nocookie.net/clashroyale/images/2/2e/MainPageBanner.png/revision/latest/scale-to-width-down/650?cb=20180107214323);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
         }
 
-
-        .container {
-            background: rgba(0, 0, 0, 0.486);
-            padding: 30px;
-            border-radius: 15px;
+        .page {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
             text-align: center;
+        }
+
+        header {
+            background: #0084ff;
+            padding: 25px;
             color: white;
-            width: 90%;
-            max-width: 400px; 
+            border-radius: 12px;
         }
 
-
-        h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
+        header h1 {
+            margin: 0;
         }
 
-
-        p {
-            font-size: 16px;
-            margin-bottom: 20px;
+        .content {
+            background: #fff;
+            margin-top: 20px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 162, 255, 0.2);
         }
 
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
         .btn {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #1e90ff;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
+            background: #005bbb;
+            color: white;
+            padding: 15px 25px;
             border-radius: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
         }
 
-
         .btn:hover {
-            background: #0c6ed6;
+            background: #003f8c;
+        }
+
+        img.logo {
+            width: 100%;
+            max-width: 260px;
+            margin: 15px 0;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ddd;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .btn {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+            img.logo {
+                max-width: 200px;
+            }
         }
     </style>
 </head>
-
 <body>
-    
 
-    <div class="container">
-        <h1>Cartas</h1>
-        <p>Veja as novas cartas adicionadas ao jogo!</p>
-        <a href="cartas.html" class="btn">Veja Aqui.</a>
+<div class="page">
 
+    <header>
+        <h1>Página Inicial - Clash Royale</h1>
+    </header>
+
+    <div class="content">
+        <img class="logo" src="clash royale/images (3).jpg"
+             alt="Clash Royale">
+
+        <h2>Bem-vindo ao meu site de Clash Royale</h2>
+        <p>
+            Aqui você pode acessar informações sobre as cartas, ler a história do jogo, gameplays e navegar por conteúdos especiais.
+        </p>
+
+        <div class="buttons">
+            <a class="btn" href="index2.html">Cartas</a>
+            <a class="btn" href="index3.html">História</a>
+            <a class="btn" href="index4.html">Gráfico de players</a>
+            <a class="btn" href="index5.html">Melhores Players</a>
+            <a class="btn" href="index6.html">Decks dos players</a>
+        </div>
     </div>
 
-    
-</body>
+    <footer>
+        <p>Site feito por Igor e Caio.</p>
+    </footer>
 
+</div>
+</body>
 </html>
